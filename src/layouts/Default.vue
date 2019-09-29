@@ -13,7 +13,7 @@
         <ul class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'">
           <li class="mr-8 mb-6 lg:mb-0"><a href="#" class="text-gray-800 hover:text-gray-600">Projects</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a href="#" class="text-gray-800 hover:text-gray-600">Blog</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/blog" class="text-gray-800 hover:text-gray-600">Blog</a></li>
         </ul>
       </nav>
     </header>
@@ -23,23 +23,6 @@
     <footer class="bg-blue-500 text-white">
       <div class="container mx-auto flex items-center justify-between py-6">
         <div>Copyright 2019. All Rights Reserved</div>
-        <ul class="flex items-center">
-          <li class="mr-8">
-            <a href="#">A</a>
-          </li>
-          <li class="mr-8">
-            <a href="#">A</a>
-          </li>
-          <li class="mr-8">
-            <a href="#">A</a>
-          </li>
-          <li class="mr-8">
-            <a href="#">A</a>
-          </li>
-          <li class="mr-8">
-            <a href="#">A</a>
-          </li>
-        </ul>
       </div>
     </footer>
   </div>

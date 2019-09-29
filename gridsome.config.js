@@ -8,12 +8,26 @@ module.exports = {
   siteName: "Bill Bakas - Full Stack Designer",
   plugins: [
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Project', // Required
+        baseDir: './projects', // Where .md files are located
+        pathPrefix: '/projects', // Add route prefix. Optional
+        template: './src/templates/Project.vue', // Optional
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
-        remark: {}
-      },
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
     },
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -28,5 +42,8 @@ module.exports = {
       }
     }
   ],
+  templates: {
+    Tag: '/tag/:id'
+  },
 }
 
