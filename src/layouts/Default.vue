@@ -4,11 +4,7 @@
     <div class="flex-grow">
       <slot/>
     </div>
-    <footer class="bg-blue-500 text-white">
-      <div class="container mx-auto flex items-center justify-between py-6">
-        <div>Copyright 2019. All Rights Reserved</div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -26,9 +22,10 @@ query {
 
 <script>
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 export default {
   components: {
-    Navbar
+    Navbar,Footer,
   },
   mounted() {
     

@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <div class="container mx-auto py-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
       <div class="flex mb-8 text-sm">
@@ -16,7 +15,6 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
-    </div>
   </Layout>
 </template>
 
@@ -35,11 +33,15 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import Layout from "../layouts/Blog.vue"
 export default {
   metaInfo() {
     return {
       title: this.$page.post.title
     }
+  },
+  components: {
+    Layout
   }
 }
 </script>
