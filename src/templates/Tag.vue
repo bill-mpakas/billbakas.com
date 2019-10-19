@@ -1,8 +1,7 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
+    <div class="container mx-auto py-16">
       <h2 class="text-4xl font-bold mb-8 border-b">Tag: {{ $page.tag.title }}</h2>
-
       <div v-for="post in $page.tag.belongsTo.edges" :key="post.node.id" class="post border-gray-400 border-b mb-12">
         <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
         <div class="text-copy-secondary mb-4">
