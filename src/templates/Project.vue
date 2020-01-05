@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-4xl font-bold leading-tight">{{ $page.project.title }}</h1>
-      <div class="markdown-body mb-2">
+      <div class="markdown-body mb-8 mb-2">
         <VueRemarkContent />
       </div>
       <div class="mb-8">

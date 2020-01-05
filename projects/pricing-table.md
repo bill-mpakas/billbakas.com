@@ -6,8 +6,22 @@ date: 2019-10-19
 100Days of Vuei
 ===============
 
-Hello and welcome to my personal Website.In this section i will create ui components daily using my favorite css framework Tailwind.I will guide you through my design process.The cool thing about that is i will also learn along the way and improve as a UI Desinger.
 
 import PricingTable from '~/components/PricingTable.vue'
 
 <PricingTable />
+
+# Welcome to StackEdit!
+
+ 1. List item
+ 2. List item
+
+
+
+Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. If you have finished with me, you can just create new files by opening the **file explorer** on the left corner of the navigation bar.
+
+
+# Files
+
+StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+
