@@ -11,8 +11,8 @@
         </div>
         <ul class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'">
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/projects" class="text-gray-800 hover:text-gray-600">Projects</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/blog" class="text-gray-800 hover:text-gray-600">Blog</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/learning" class="text-gray-800 hover:text-gray-600">learning</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/blog" class="text-gray-800 hover:text-gray-600">blog</a></li>
         </ul>
       </nav>
     </header>
