@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-4xl font-bold leading-tight">{{ $page.project.title }}</h1>
-      <div class="markdown-body mb-8 mb-2">
+      <div class="container markdown mb-8 mb-2">
         <VueRemarkContent />
       </div>
       <div class="mb-8">
@@ -33,4 +33,4 @@ export default {
 }
 </script>
 
-<style src="../css/github-markdown.css" />
+<style src="../css/tailwind-markdown.css" />

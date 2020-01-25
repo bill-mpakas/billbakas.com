@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="font-sans text-gray-800 leading-normal flex flex-col min-h-screen">
     <Navbar />
-    <div class="container mx-auto py-16">
+    <div class="container flex-grow mx-auto py-16">
       <slot/>
     </div>
     <Footer />
@@ -18,7 +18,7 @@
 
 <style>
 
-  @import url(https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css);
+
 
 </style>
 
