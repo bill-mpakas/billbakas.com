@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="effa34a9-7ae5-426c-945b-49f120491e5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/billbakas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/taking-on-the-daily-ui-challenge.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/design-for-developers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +34,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,7 +51,9 @@
       <workItem from="1569093359345" duration="844000" />
       <workItem from="1569095476476" duration="2990000" />
       <workItem from="1580027765995" duration="1265000" />
-      <workItem from="1580040830962" duration="1707000" />
+      <workItem from="1580040830962" duration="1914000" />
+      <workItem from="1580049574514" duration="645000" />
+      <workItem from="1580050245006" duration="2481000" />
     </task>
     <servers />
   </component>
@@ -81,5 +78,9 @@
       <screen x="-656" y="-1440" width="2560" height="1440" />
     </state>
     <state x="312" y="-985" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800/-656.-1440.2560.1440@-656.-1440.2560.1440" timestamp="1580027841087" />
+    <state x="133" y="-1081" key="SettingsEditor" timestamp="1580050221363">
+      <screen x="-656" y="-1440" width="2560" height="1440" />
+    </state>
+    <state x="133" y="-1081" key="SettingsEditor/0.0.1280.800/-656.-1440.2560.1440@-656.-1440.2560.1440" timestamp="1580050221363" />
   </component>
 </project>
