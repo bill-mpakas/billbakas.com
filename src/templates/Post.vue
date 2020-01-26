@@ -24,6 +24,7 @@ query Post ($path: String!) {
     title
     date (format: "MMMM D, Y")
     content
+    summary
     tags {
       title
       path
@@ -37,7 +38,8 @@ import Layout from "../layouts/Blog.vue"
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      description: this.$page.post.summary
     }
   },
   components: {

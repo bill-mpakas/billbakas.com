@@ -24,7 +24,7 @@ export default {
     Navbar,Footer,
   },
   mounted() {
-    
+
   },
   data() {
     return {
@@ -39,3 +39,5 @@ export default {
   }
 }
 </script>
+
+<style src="../css/main.css" />
