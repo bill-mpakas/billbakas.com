@@ -11,10 +11,19 @@
           <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>
         </div>
     </section>
-    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+
+    <section id="projects">
+      
+      <g-link to="/projects/">More Projects</g-link>
+    </section>
+
+
+    <section id="blog">
+      <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
-      <span>{{ edge.node.date}}</span>
     </div>
+    </section>
+    
   </Layout>
 </template>
 
@@ -34,16 +43,17 @@
 </page-query>
 
 <page-query>
-  query Projects {
-    projects: allProject {
-      edges {
-        node {
-          title
-          path
-        }
+query Project {
+  projects: allProject (sortBy: "date", order: DESC) {
+    edges {
+      node {
+        id
+        path
+        title
       }
     }
   }
+}
 </page-query>
 
 <script>

@@ -20,7 +20,7 @@ query Project ($id: ID!) {
 </page-query>
 
 <script>
-import Layout from "../layouts/Blog.vue"
+import Layout from "../layouts/Project.vue"
 export default {
   metaInfo() {
     return {

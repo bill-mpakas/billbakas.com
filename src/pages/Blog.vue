@@ -47,12 +47,14 @@ query Posts ($page: Int) {
 
 <script>
 import PaginationPosts from '../components/PaginationPosts'
+import Layout from "../layouts/Blog.vue"
 
 export default {
   metaInfo: {
     title: 'Blog'
   },
   components: {
+    Layout,
     PaginationPosts
   }
 }
