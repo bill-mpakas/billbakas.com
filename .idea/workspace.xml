@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="effa34a9-7ae5-426c-945b-49f120491e5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="billbakas" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,7 +17,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -47,6 +42,7 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -65,33 +61,38 @@
       <workItem from="1580050245006" duration="2739000" />
       <workItem from="1580151057957" duration="3897000" />
       <workItem from="1584646614724" duration="11000" />
+      <workItem from="1585152258174" duration="1074000" />
+      <workItem from="1585164051852" duration="163000" />
+      <workItem from="1585164228687" duration="166000" />
+      <workItem from="1594117291094" duration="20000" />
+      <workItem from="1594117323304" duration="164000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="-985" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580027841087">
       <screen x="-656" y="-1440" width="2560" height="1440" />
     </state>
     <state x="312" y="-985" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800/-656.-1440.2560.1440@-656.-1440.2560.1440" timestamp="1580027841087" />
-    <state x="133" y="-1081" key="SettingsEditor" timestamp="1580050221363">
-      <screen x="-656" y="-1440" width="2560" height="1440" />
+    <state x="835" y="379" key="SettingsEditor" timestamp="1585164377424">
+      <screen x="67" y="27" width="2493" height="1413" />
     </state>
     <state x="133" y="-1081" key="SettingsEditor/0.0.1280.800/-656.-1440.2560.1440@-656.-1440.2560.1440" timestamp="1580050221363" />
+    <state x="835" y="379" key="SettingsEditor/67.27.2493.1413@67.27.2493.1413" timestamp="1585164377424" />
   </component>
 </project>
