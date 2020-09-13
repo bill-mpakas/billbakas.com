@@ -1,5 +1,6 @@
 <template>
   <Layout>
+<<<<<<< HEAD
     <section id="main">
       <span>Hey,there </span>
       <h1 class="text-3xl">I am Bill Bakas</h1>
@@ -13,12 +14,16 @@
         </div>
     </section>
 
+=======
+    <Hero />
+>>>>>>> 487d751557d117428d3ddda3553a1041770ab63a
     <section id="blog">
       <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
-    </div>
+        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </div>
     </section>
 
+<<<<<<< HEAD
     <section id="projects">
       <div v-for="edge in $page.projects.edges" :key="edge.node.id">
       <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
@@ -26,10 +31,13 @@
     </section>
 
     
+=======
+>>>>>>> 487d751557d117428d3ddda3553a1041770ab63a
   </Layout>
 </template>
 
 <page-query>
+<<<<<<< HEAD
 query Posts {
   posts: allPost {
     edges {
@@ -52,11 +60,31 @@ query Posts {
   }
 }
 </page-query>
+=======
+  query Posts {
+    posts: allPost {
+      edges {
+        node {
+          id
+          title
+          path
+                }
+          }
+        }
+      }
+</page-query>
+
+>>>>>>> 487d751557d117428d3ddda3553a1041770ab63a
 
 <script>
+import Hero from "../components/Hero";
+
 export default {
   metaInfo: {
     title: 'Hello, world!'
-  }
+  },
+  components: {
+    Hero
+  },
 }
 </script>
