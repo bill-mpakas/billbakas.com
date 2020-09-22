@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans text-gray-800 leading-normal flex flex-col min-h-screen">
     <Navbar />
-    <div class="container flex-grow mx-auto py-16">
+    <div class="container flex-grow mx-auto py-8 md:py-16 py-32">
       <slot/>
     </div>
     <Footer />

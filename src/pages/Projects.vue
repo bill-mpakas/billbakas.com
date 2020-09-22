@@ -1,19 +1,11 @@
 <template>
   <Layout>
-    <div class="px-6 py-3 h-48 bg-blue-500">
-      <div class="container">
-        <h2 class="text-3xl py-2 text-white">{{ $metaInfo.title }}</h2>
-      </div>
-    </div>
-    <div class="container mx-auto py-16">
       <div v-for="project in $page.projects.edges" :key="project.id" class="post border-gray-400 border-b mb-12">
         <h2 class="text-3xl font-bold"><g-link :to="project.node.path" class="text-copy-primary">{{ project.node.title }}</g-link></h2>
         <div class="mb-8">
           <g-link :to="project.node.path" class="font-bold uppercase">Read More</g-link>
         </div>
       </div> <!-- end post -->
-
-    </div>
   </Layout>
 </template>
 
