@@ -1,10 +1,12 @@
 <template>
   <Layout>
     <Hero />
-    <section id="blog">
-      <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
-      </div>
+    <section id="recent">
+     <div class="container">
+       <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+         <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+       </div>
+     </div>
     </section>
 
   </Layout>

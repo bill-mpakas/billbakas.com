@@ -9,13 +9,12 @@
             <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
           </button>
         </div>
-        <ul class="tracking-wide font-light w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
+        <ul class="tracking-wide font-regular w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'">
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/#about-me" class="text-gray-800 hover:text-gray-600">about</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/#experience" class="text-gray-800 hover:text-gray-600">experience</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/#work" class="text-gray-800 hover:text-gray-600">work</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a href="/blog" class="text-gray-800 hover:text-gray-600">blog</a></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a target="_blank" href="/resume.pdf" class="text-gray-800 hover:text-gray-600">resume</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/#about-me" class="text-gray-800 hover:text-gray-600">About</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/#work" class="text-gray-800 hover:text-gray-600">Work</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a href="/blog" class="text-gray-800 hover:text-gray-600">Blog</a></li>
+          <li class="mr-8 mb-6 lg:mb-0"><a target="_blank" href="/resume.pdf" class="text-gray-800 hover:text-gray-600">Resume</a></li>
         </ul>
       </nav>
     </header>

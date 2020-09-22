@@ -8,6 +8,7 @@
 body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fefefe;
+  font-family: Roboto, sans-serif;
 }
 
 .home-links a {

@@ -4,7 +4,7 @@
     <div class="py-16">
       <slot/>
     </div>
-    <Footer />
+<!--    <Footer />-->
   </div>
 </template>
 
