@@ -1,22 +1,16 @@
 module.exports = {
   theme: {
-    container: {
-      center: true,
-    },
     fontFamily: {
       sans: [
-        'Open Sans',
+        'Cabin',
+        '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
         'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
+        '"Oxygen"',
+        'Ubuntu',
+        '"Cantarell"',
         'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
       ],
       serif: [
         'Georgia',
