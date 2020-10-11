@@ -1,10 +1,12 @@
 <template>
   <Layout>
-    <VueRemarkContent>
-      <template v-slot:ad>
-        <Ad />
-      </template>
-    </VueRemarkContent>
+    <h1 class="text-4xl font-bold leading-tight">{{ $page.project.title }}</h1>
+      <div class="container markdown mb-8 mb-2">
+        <VueRemarkContent />
+      </div>
+      <div class="mb-8">
+        <g-link to="/projects" class="font-bold uppercase">Back to Projects</g-link>
+      </div>
   </Layout>
 </template>
 
@@ -18,7 +20,7 @@ query Project ($id: ID!) {
 </page-query>
 
 <script>
-import Ad from "../components/Ad"
+import Layout from "../layouts/Project.vue"
 export default {
   metaInfo() {
     return {
@@ -26,9 +28,9 @@ export default {
     }
   },
   components: {
-    Ad,
+    Layout,
   }
 }
 </script>
 
-<style src="../css/github-markdown.css" />
+<style src="../css/tailwind-markdown.css" />

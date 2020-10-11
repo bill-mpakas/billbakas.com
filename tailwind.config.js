@@ -1,5 +1,8 @@
 module.exports = {
   theme: {
+    container: {
+      center: true,
+    },
     fontFamily: {
       sans: [
         'Open Sans',

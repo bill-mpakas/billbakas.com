@@ -9,26 +9,35 @@
 </template>
 
 <static-query>
-  query {
+query {
   metadata {
-  siteName
+    siteName
   }
-  }
+}
 </static-query>
-
-<style>
-
-
-
-</style>
 
 <script>
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 export default {
   components: {
-    Navbar,
-    Footer,
+    Navbar,Footer,
   },
+  mounted() {
+
+  },
+  data() {
+    return {
+      isOpen: false,
+      theme: '',
+    }
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen
+    },
+  }
 }
 </script>
+
+<style src="../css/main.css" />

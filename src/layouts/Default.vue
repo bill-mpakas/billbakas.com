@@ -1,14 +1,10 @@
 <template>
-  <div class="font-sans text-gray-800 leading-normal flex flex-col min-h-screen">
-    <NavBarMenu />
-    <div class="flex-grow">
+  <div class="flex flex-col min-h-screen font-sans leading-normal text-gray-800">
+    <Navbar />
+    <div class="container flex-grow py-8 py-32 mx-auto md:py-16">
       <slot/>
     </div>
-    <footer class="bg-blue-500 text-white">
-      <div class="container mx-auto flex items-center justify-between py-6">
-        <div>Copyright 2019. All Rights Reserved</div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -20,23 +16,28 @@
   }
 </static-query>
 
-<style>
-
-</style>
-
 <script>
-    import NavBarMenu from '../components/NavBarMenu'
-    export default {
-    components: {
-        NavBarMenu
-    },
-    mounted() {
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+export default {
+  components: {
+    Navbar,Footer,
+  },
+  mounted() {
 
+  },
+  data() {
+    return {
+      isOpen: false,
+      theme: '',
+    }
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen
     },
-    data()  {
-        return {
-
-        }
-    }
-    }
+  }
+}
 </script>
+
+<style src="../css/main.css" />

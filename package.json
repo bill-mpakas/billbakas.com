@@ -8,13 +8,17 @@
   },
   "dependencies": {
     "@gridsome/cli": "^0.3.1",
+    "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.4",
-    "@gridsome/vue-remark": "^0.1.8",
+    "@gridsome/transformer-remark": "^0.6.2",
+    "@gridsome/vue-remark": "^0.2.4",
     "global": "^4.4.0",
-    "gridsome": "^0.7.12"
+    "gridsome": "^0.7.20",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.25"
+    "gridsome-plugin-tailwindcss": "^2.2.25",
+    "vue-feather-icons": "^5.0.0"
   }
 }
