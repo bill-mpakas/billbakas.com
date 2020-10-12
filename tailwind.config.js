@@ -1,5 +1,13 @@
 module.exports = {
   theme: {
+    container: {
+      padding: {
+        default: '1rem',
+        sm: '2rem',
+        lg: '2rem',
+        xl: '2rem',
+      },
+    },
     fontFamily: {
       sans: [
         'Cabin',

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen font-sans leading-normal text-gray-800">
+  <div>
     <Navbar />
     <div class="container py-32 mx-auto md:py-16">
       <slot/>
