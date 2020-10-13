@@ -1,20 +1,19 @@
 <template>
-<header class="border-t-14 border-green-700">
-      <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
+<header class="border-green-700 border-t-14">
+      <nav class="container flex flex-wrap items-center justify-between py-8 mx-auto">
         <div>
           <g-link to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
         </div>
         <div class="block lg:hidden">
-          <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
-            <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
+          <button @click="toggle" class="flex items-center px-3 py-2 border border-gray-500 rounded hover:text-gray-600 hover:border-gray-600">
+            <svg class="w-3 h-3 current-color" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
           </button>
         </div>
-        <ul class="tracking-wide font-regular w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
+        <ul class="items-center flex-grow block w-full mt-8 tracking-wide font-regular lg:flex lg:flex-initial lg:w-auto lg:mt-0"
           :class="isOpen ? 'block': 'hidden'">
-          <li class="mr-8 mb-6 lg:mb-0"><g-link to="/about" class="text-xl text-gray-800 hover:text-gray-600">About</g-link></li>
-          <li class="mr-8 mb-6 lg:mb-0"><g-link to="/projects" class="text-xl text-gray-800 hover:text-gray-600">Work</g-link></li>
-          <li class="mr-8 mb-6 lg:mb-0"><g-link to="/blog" class="text-xl text-gray-800 hover:text-gray-600">Blog</g-link></li>
-          <li class="mr-8 mb-6 lg:mb-0"><a target="_blank" rel="noopener" href="/resume.pdf" class="text-xl text-gray-800 hover:text-gray-600">Resume</a></li>
+          <li class="mb-6 mr-8 lg:mb-0"><g-link to="/projects" class="text-xl text-gray-800 hover:text-gray-600">Work</g-link></li>
+          <li class="mb-6 mr-8 lg:mb-0"><g-link to="/articles" class="text-xl text-gray-800 hover:text-gray-600">Articles</g-link></li>
+          <li class="mb-6 mr-8 lg:mb-0"><a target="_blank" rel="noopener" href="/resume.pdf" class="text-xl text-gray-800 hover:text-gray-600">Resume</a></li>
         </ul>
       </nav>
     </header>

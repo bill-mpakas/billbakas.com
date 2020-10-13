@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@gridsome/cli": "^0.3.1",
-    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.6.2",
     "@gridsome/vue-remark": "^0.2.4",
@@ -18,7 +18,7 @@
     "update": "^0.7.4"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.25",
+    "gridsome-plugin-tailwindcss": "^3.0.1",
     "vue-feather-icons": "^5.0.0"
   }
 }
