@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Bill Bakas - Full Stack Designer",
+  siteName: "Bill Bakas - UI Designer/Developer",
   plugins: [
     {
       use: '@gridsome/vue-remark',

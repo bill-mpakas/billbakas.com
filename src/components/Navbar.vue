@@ -11,7 +11,6 @@
         </div>
         <ul class="items-center flex-grow block w-full mt-8 tracking-wide font-regular lg:flex lg:flex-initial lg:w-auto lg:mt-0"
           :class="isOpen ? 'block': 'hidden'">
-          <li class="mb-6 mr-8 lg:mb-0"><g-link to="/about" class="text-xl text-gray-800 hover:text-gray-600">About</g-link></li>
           <li class="mb-6 mr-8 lg:mb-0"><g-link to="/projects" class="text-xl text-gray-800 hover:text-gray-600">Work</g-link></li>
           <li class="mb-6 mr-8 lg:mb-0"><g-link to="/articles" class="text-xl text-gray-800 hover:text-gray-600">Articles</g-link></li>
           <li class="mb-6 mr-8 lg:mb-0"><a target="_blank" rel="noopener" href="/resume.pdf" class="text-xl text-gray-800 hover:text-gray-600">Resume</a></li>
