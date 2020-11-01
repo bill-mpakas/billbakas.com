@@ -6,11 +6,9 @@ summary: I decided to take on the Daily UI Challenge to improve my UI skills and
 tags: ['ui', 'design', 'dailyui']
 --- 
 
----
-
 ## The Why
 
-After some time experimenting with tutorials on youtube about ui design, i realized that the best approach to become a better desinger is to actually build stuff on your own. I randomly ran across the Daily UI Challenge and i decided to give it a go sharing my process along the way. 
+After some time experimenting with tutorials on youtube about ui design, i realized that the best approach to become a better desinger is to actually build stuff on your own. I randomly ran across the Daily UI Challenge and i decided to give it a go, sharing my process along the way. 
 
 ## The How
 

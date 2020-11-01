@@ -1,25 +1,20 @@
 ---
-title: Pricing Table
-date: 2019-10-19
---- 
+title: My go to plugins to a fresh WordPress Installation
+thumbnail: 
+date: 2020-11-01
+summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus.
+tags: ['WordPress','plugins']
+---
 
-100Days of Vuei
-===============
-
-
-import PricingTable from '~/components/PricingTable.vue'
-
-<PricingTable />
-
-# Introducing 
+## Introducing 
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
    ```html
 <div class="flex justify-start bg-gray-200">
- <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+ <div class="px-4 py-2 m-2 text-center text-gray-700 bg-gray-400">1</div>
+  <div class="px-4 py-2 m-2 text-center text-gray-700 bg-gray-400">2</div>
+  <div class="px-4 py-2 m-2 text-center text-gray-700 bg-gray-400">3</div>
 </div>
 ```
 

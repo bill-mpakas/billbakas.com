@@ -1,9 +1,7 @@
 <template>
-  <div class="font-sans text-gray-800 leading-normal flex flex-col min-h-screen">
+  <div>
     <Navbar />
-    <div class="container flex-grow mx-auto py-8 md:py-16 py-32">
-      <slot/>
-    </div>
+    <slot/>
     <Footer />
   </div>
 </template>
@@ -39,5 +37,3 @@ export default {
   }
 }
 </script>
-
-<style src="../css/main.css" />

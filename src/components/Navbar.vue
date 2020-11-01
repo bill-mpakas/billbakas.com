@@ -1,6 +1,6 @@
 <template>
-<header class="border-green-700 border-t-14">
-      <nav class="container flex flex-wrap items-center justify-between py-8 mx-auto">
+<header>
+      <nav class="container flex flex-wrap justify-between py-8 mx-auto">
         <div>
           <g-link to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
         </div>

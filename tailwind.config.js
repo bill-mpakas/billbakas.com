@@ -1,4 +1,8 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   theme: {
     container: {
       padding: {
@@ -39,5 +43,15 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('@tailwindcss/ui'),
+    // require('@tailwindcss/typography'),
+    // require('@tailwindcss/custom-forms'),
+  ],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.vue'],
+  },
 }
+
+

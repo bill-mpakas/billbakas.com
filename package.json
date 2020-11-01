@@ -12,6 +12,8 @@
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.6.2",
     "@gridsome/vue-remark": "^0.2.4",
+    "@tailwindcss/typography": "^0.2.0",
+    "@tailwindcss/ui": "^0.6.2",
     "global": "^4.4.0",
     "gridsome": "^0.7.20",
     "to": "^0.2.9",

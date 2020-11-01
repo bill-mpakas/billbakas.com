@@ -1,32 +1,34 @@
 <template>
   <Layout>
-    <section class="py-12" id="intro">
+    <section class="py-4 lg:py-12" id="intro">
       <div class="flex flex-wrap justify-between">
         <div class="w-full md:w-9/12">
           <p class="w-full mb-2 text-2xl text-gray-800 font-regular lg:mb-4 lg:text-3xl">
-            Hi. I’m Bill.A UI designer & Wordpress Developer. I design & develop, resilient and accessible user interfaces. Currently pushing pixels &#64;<a target="_blank" class="font-medium text-red-700" rel="noopener" href="https://pointer.gr">pointer.</a>
+            Hi! I’m Bill. A UI designer & Wordpress Developer. I design & develop, resilient and accessible user interfaces. Currently pushing pixels &#64;<a target="_blank" class="font-medium text-red-700" rel="noopener" href="https://pointer.gr">pointer.</a>
           </p>
         </div>
-          <g-image src="~/assets/images/bill-photo.jpg" class="h-48 w-48 object-cover rounded-full" alt="logo" />
+        <div class="py-4 mx-auto md:py-0">
+            <g-image src="~/assets/images/bill-photo.jpg" class="object-cover w-48 h-48 text-center rounded-full" alt="logo" />
+        </div>
       </div>
     </section>
-    <section class="my-16" id="recent-articles">
+    <section class="my-4 md:my-12" id="recent-articles">
       <div class="w-full py-4 border-b-2 border-gray-200">
-          <h2 class="text-3xl lg:text-4xl leading-relaxed tracking-tight font-extrabold text-gray-900">
+          <h2 class="text-3xl font-extrabold leading-relaxed tracking-tight text-gray-700 lg:text-4xl">
             Articles
           </h2>
-          <h3 class="text-2xl lg:text-2xl leading-7 text-gray-700">
+          <h3 class="text-2xl leading-7 text-gray-500 lg:text-2xl">
             I occasionally write about stuff i am excited.
           </h3>
       </div>
         <div class="mx-auto lg:max-w-7xl">
-          <div class="mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <div class="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             <div v-for="edge in $page.posts.edges" :key="edge.node.id" >
               <p class="text-lg leading-5 text-gray-700">
                 <time :datetime="edge.node.date">{{edge.node.date}}</time>
               </p>
               <g-link :to="edge.node.path" class="block">
-                <h3 class="mt-2 text-2xl leading-7 font-semibold text-indigo-800">
+                <h3 class="mt-2 text-2xl font-semibold leading-7 text-indigo-800">
                   {{ edge.node.title }}
                 </h3>
                 <p class="mt-3 text-lg leading-6 text-gray-700">
@@ -34,7 +36,7 @@
                 </p>
               </g-link>
               <div class="mt-3">
-                <g-link :to="edge.node.path" class="text-lg leading-6 font-semibold text-indigo-600 hover:text-underline transition ease-in-out duration-150">
+                <g-link :to="edge.node.path" class="text-lg font-semibold leading-6 text-indigo-600 transition duration-150 ease-in-out hover:text-underline">
                   Read full article
                 </g-link>
               </div>
@@ -44,21 +46,21 @@
     </section>
     <section class="my-16" id="projects">
       <div class="w-full py-4 border-b-2 border-gray-200">
-        <h2 class="text-3xl lg:text-4xl leading-relaxed tracking-tight font-extrabold text-gray-900">
+        <h2 class="text-3xl font-bold leading-relaxed tracking-tight text-gray-800 lg:text-4xl">
           Projects
         </h2>
-        <h3 class="text-2xl lg:text-2xl leading-7 text-gray-700">
+        <h3 class="text-2xl leading-7 text-gray-700 lg:text-2xl">
           Below are the projects i worked on and my role on them
         </h3>
       </div>
       <div class="mx-auto lg:max-w-7xl">
-        <div class="mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-          <div v-for="edge in $page.posts.edges" :key="edge.node.id" >
+        <div class="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <div v-for="edge in $page.projects.edges" :key="edge.node.id" >
             <p class="text-lg leading-5 text-gray-700">
               <time :datetime="edge.node.date">{{edge.node.date}}</time>
             </p>
             <a href="#" class="block">
-              <h3 class="mt-2 text-2xl leading-7 font-semibold text-gray-900">
+              <h3 class="mt-2 text-2xl font-semibold leading-7 text-gray-900">
                 {{ edge.node.title }}
               </h3>
               <p class="mt-3 text-lg leading-6 text-gray-700">
@@ -66,7 +68,7 @@
               </p>
             </a>
             <div class="mt-3">
-              <g-link :to="edge.node.path" class="text-base leading-6 font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150">
+              <g-link :to="edge.node.path" class="text-base font-semibold leading-6 text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500">
                 Read full article
               </g-link>
             </div>
