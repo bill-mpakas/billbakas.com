@@ -8,6 +8,9 @@ module.exports = {
   siteName: "Bill Bakas - UI Designer/Developer",
   plugins: [
     {
+      use: 'gridsome-plugin-seo'
+    },
+    {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Project', // Required
@@ -37,6 +40,34 @@ module.exports = {
         shouldImport: true,
         shouldTimeTravel: true,
         shouldPurgeUnusedKeyframes: true,
+      }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'G-NDVYYZ15CG'
+      }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        host: 'https://billbakas.com',
+        sitemap: 'https://billbakas.com/configs/sitemap.xml',
+        policy: [
+          {
+            userAgent: "Googlebot",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 2
+          },
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 10,
+            cleanParam: "ref /articles/"
+          }
+        ]
       }
     }
   ],

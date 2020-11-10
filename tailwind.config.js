@@ -49,7 +49,7 @@ module.exports = {
     // require('@tailwindcss/custom-forms'),
   ],
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./src/**/*.vue'],
   },
 }
