@@ -3,7 +3,7 @@ title: Taking on the Daily UI Challenge
 thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
 date: 2020-01-26
 summary: I decided to take on the Daily UI Challenge to improve my UI skills and share my process along the way. 
-tags: ['ui', 'design', 'dailyui']
+tags: ['UI']
 --- 
 
 ## The Why

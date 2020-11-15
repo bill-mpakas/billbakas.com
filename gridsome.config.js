@@ -4,6 +4,15 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
+
 module.exports = {
   siteName: "Bill Bakas - UI Designer/Developer",
   plugins: [
@@ -30,16 +39,6 @@ module.exports = {
             create: true
           }
         }
-      }
-    },
-    {
-      use: 'gridsome-plugin-tailwindcss',
-      options: {
-        tailwindConfig: './tailwind.config.js',
-        presetEnvConfig: {},
-        shouldImport: true,
-        shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true,
       }
     },
     {
@@ -71,6 +70,13 @@ module.exports = {
       }
     }
   ],
+  css: {
+    loaderOptions: {
+        postcss: {
+            plugins: postcssPlugins,
+        },
+    },
+  },
   templates: {
     Tag: '/tag/:id'
   },

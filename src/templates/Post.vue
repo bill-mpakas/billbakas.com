@@ -1,20 +1,20 @@
 <template>
   <Layout>
-      <section class="w-full py-8 mx-auto mb-6 bg-yellow-300 md:py-16 lg:mb-8">
-        <h1 class="text-3xl font-bold leading-tight text-center text-gray-800 lg:text-4xl">{{ $page.post.title }}</h1>
-      <div class="mb-4 text-xl font-medium text-center text-gray-500">{{ $page.post.date }}</div>
-      <div class="flex justify-center mb-8 text-sm">
+      <section class="w-full py-8 mx-auto md:py-16 lg:py-24">
+        <h1 class="mb-2 text-2xl font-bold text-center text-gray-800 lg:text-4xl">{{ $page.post.title }}</h1>
+      <div class="mb-4 text-xl text-center text-gray-500">{{ $page.post.date }}</div>
+      <div class="flex justify-center space-x-2 text-sm">
         <g-link
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="px-4 py-2 mr-4 bg-gray-200 rounded-full hover:bg-green-300">
+          class="px-4 py-1 capitalize transition duration-500 ease-in-out transform bg-blue-200 hover:-translate-y-1 hover:scale-101 hover:bg-blue-300 rounded-xl lg:text-lg">
           {{ tag.title }}
         </g-link>
       </div>
       </section>
-      <article class="container mx-auto prose lg:prose-xl" v-html="$page.post.content" />
-      <div class="mx-auto my-4 prose lg:prose-xl">
+      <article class="container mx-auto prose lg:prose-lg" v-html="$page.post.content" />
+      <div class="mx-auto my-4 prose lg:prose-lg">
         <g-link to="/articles" class="my-8 font-bold text-center uppercase lg:mt-16">Back to Blog</g-link>
       </div>
   </Layout>

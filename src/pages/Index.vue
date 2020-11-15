@@ -12,7 +12,7 @@
         </div>
       </div>
     </section>
-    <section class="my-4 md:my-12" id="recent-articles">
+    <!-- <section class="my-4 md:my-12" id="recent-articles">
       <div class="w-full py-4 border-b-2 border-gray-200">
           <h2 class="text-3xl font-extrabold leading-relaxed tracking-tight text-gray-700 lg:text-4xl">
             Articles
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </Layout>
 </template>
 

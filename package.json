@@ -19,11 +19,11 @@
     "gridsome": "^0.7.20",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-seo": "^1.0.1",
+    "tailwindcss": "^1.9.6",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^3.0.1",
-    "vue-feather-icons": "^5.0.0"
+    "@fullhuman/postcss-purgecss": "^3.0.0"
   }
 }

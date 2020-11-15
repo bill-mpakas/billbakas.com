@@ -14,7 +14,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Cabin',
+        'Ubuntu',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

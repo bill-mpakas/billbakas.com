@@ -3,9 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-
-body {
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Cabin', sans-serif;
-}
