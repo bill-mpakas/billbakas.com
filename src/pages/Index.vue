@@ -109,8 +109,8 @@
 export default {
   metaInfo () {
     return this.$seo({
-      title: 'My page', // Uses the titleTemplate in Gridsome config
-      description: 'My description',
+      title: 'Home', // Uses the titleTemplate in Gridsome config
+      description: '| Full Stack Designer',
       keywords: 'one,two',
       openGraph: {
         title: 'My site',

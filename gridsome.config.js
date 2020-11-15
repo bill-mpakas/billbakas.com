@@ -14,7 +14,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: "Bill Bakas - UI Designer/Developer",
+  siteName: "Bill Bakas",
   plugins: [
     {
       use: 'gridsome-plugin-seo'

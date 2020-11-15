@@ -8,12 +8,12 @@
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="px-4 py-1 capitalize transition duration-500 ease-in-out transform bg-blue-200 hover:-translate-y-1 hover:scale-101 hover:bg-blue-300 rounded-xl lg:text-lg">
+          class="px-4 py-1 capitalize transition duration-500 ease-in-out transform bg-blue-200 hover:-translate-y-1 hover:scale-101 hover:bg-blue-300 rounded-xl lg:text-base">
           {{ tag.title }}
         </g-link>
       </div>
       </section>
-      <article class="container mx-auto prose lg:prose-lg" v-html="$page.post.content" />
+      <article class="container mx-auto prose lg:px-0 lg:prose-lg" v-html="$page.post.content" />
       <div class="mx-auto my-4 prose lg:prose-lg">
         <g-link to="/articles" class="my-8 font-bold text-center uppercase lg:mt-16">Back to Blog</g-link>
       </div>

@@ -1,16 +1,15 @@
 <template>
     <Layout>
-     <div class="w-full py-12 space-y-2 border-b border-gray-200">
-       <div>
+       <section class="w-full py-4 mx-auto md:py-8">
          <h2 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
            Articles
          </h2>
          <p class="mt-3 text-xl leading-7 text-gray-600 sm:mt-4">
            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
          </p>
-       </div>
-        </div>
-        <div v-for="post in $page.posts.edges" :key="post.id" class="py-2 mx-auto border-b border-gray-400 md:py-4 post">
+       </section>
+       <section class="py-4 md:py-8">
+          <div v-for="post in $page.posts.edges" :key="post.id" class="mx-auto">
         <h2 class="text-2xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
         <div class="mb-4 text-copy-secondary">
           <span>{{ post.node.date }}</span>
@@ -20,10 +19,12 @@
         <div class="mb-4 text-lg">
           {{ post.node.summary }}
         </div>
+        <!-- //TODO Add related tags to the list of articles -->
         <div class="mt-3">
           <g-link :to="post.node.path" class="text-base font-semibold leading-6 text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">Read More</g-link>
         </div>
       </div> <!-- end post -->
+       </section>
       <pagination-posts
         v-if="$page.posts.pageInfo.totalPages > 1"
         base="/blog"
@@ -49,6 +50,10 @@ query Posts ($page: Int) {
         summary
         timeToRead
         path
+        tags {
+          title
+          path
+        }
       }
     }
   }
