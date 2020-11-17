@@ -1,6 +1,6 @@
 <template>
   <Layout>
-      <section class="w-full py-8 mx-auto md:py-16 lg:py-24">
+      <section>
         <h1 class="mb-2 text-2xl font-bold text-center text-gray-800 lg:text-4xl">{{ $page.post.title }}</h1>
       <div class="mb-4 text-xl text-center text-gray-500">{{ $page.post.date }}</div>
       <div class="flex justify-center space-x-2 text-sm">

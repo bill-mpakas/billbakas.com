@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout class="bg-50">
        <section class="w-full py-4 mx-auto md:py-8">
          <h2 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
            Articles
@@ -10,7 +10,8 @@
        </section>
        <section class="py-4 md:py-8">
           <div v-for="post in $page.posts.edges" :key="post.id" class="mx-auto">
-        <h2 class="text-2xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
+            <div class="max-w-5xl px-6 py-6 bg-white rounded-lg shadow">
+              <h2 class="text-2xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
         <div class="mb-4 text-copy-secondary">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
@@ -23,9 +24,10 @@
         <div class="mt-3">
           <g-link :to="post.node.path" class="text-base font-semibold leading-6 text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">Read More</g-link>
         </div>
-      </div> <!-- end post -->
+            </div>
+          </div> <!-- end post -->
        </section>
-      <pagination-posts
+      <pagination-posts class="max-w-2xl mx-auto"
         v-if="$page.posts.pageInfo.totalPages > 1"
         base="/blog"
         :totalPages="$page.posts.pageInfo.totalPages"

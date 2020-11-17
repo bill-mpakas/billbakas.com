@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar />
-    <slot/>
+    <div class="container max-w-5xl py-4 mx-auto md:py-16">
+      <slot/>
+    </div>
     <Footer />
   </div>
 </template>
