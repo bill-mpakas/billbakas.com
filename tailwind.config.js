@@ -44,8 +44,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    require('@tailwindcss/ui'),
-    // require('@tailwindcss/typography'),
+    require('@tailwindcss/typography'),
     // require('@tailwindcss/custom-forms'),
   ],
   purge: {
