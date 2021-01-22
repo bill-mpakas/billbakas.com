@@ -4,9 +4,21 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
+
 module.exports = {
-  siteName: "Bill Bakas - Full Stack Designer",
+  siteName: "Bill Bakas",
   plugins: [
+    {
+      use: 'gridsome-plugin-seo'
+    },
     {
       use: '@gridsome/vue-remark',
       options: {
@@ -30,18 +42,41 @@ module.exports = {
       }
     },
     {
-      use: 'gridsome-plugin-tailwindcss',
+      use: '@gridsome/plugin-google-analytics',
       options: {
-        tailwindConfig: './tailwind.config.js',
-        purgeConfig: {},
-        presetEnvConfig: {},
-        shouldPurge: true,
-        shouldImport: true,
-        shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true,
+        id: 'G-NDVYYZ15CG'
+      }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        host: 'https://billbakas.com',
+        sitemap: 'https://billbakas.com/configs/sitemap.xml',
+        policy: [
+          {
+            userAgent: "Googlebot",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 2
+          },
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 10,
+            cleanParam: "ref /articles/"
+          }
+        ]
       }
     }
   ],
+  css: {
+    loaderOptions: {
+        postcss: {
+            plugins: postcssPlugins,
+        },
+    },
+  },
   templates: {
     Tag: '/tag/:id'
   },

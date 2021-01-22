@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col min-h-screen font-sans leading-normal text-gray-800">
+    <div>
     <Navbar />
-    <div class="container flex-grow py-8 py-32 mx-auto md:py-16">
+    <div class="container max-w-5xl py-4 mx-auto md:py-16">
       <slot/>
     </div>
     <Footer />
@@ -40,4 +40,4 @@ export default {
 }
 </script>
 
-<style src="../css/main.css" />
+

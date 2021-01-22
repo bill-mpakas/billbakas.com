@@ -1,22 +1,28 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   theme: {
     container: {
-      center: true,
+      padding: {
+        default: '1rem',
+        sm: '2rem',
+        lg: '2rem',
+        xl: '2rem',
+      },
     },
     fontFamily: {
       sans: [
-        'Open Sans',
+        'Ubuntu',
+        '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
         'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
+        '"Oxygen"',
+        'Ubuntu',
+        '"Cantarell"',
         'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
       ],
       serif: [
         'Georgia',
@@ -37,5 +43,14 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    // require('@tailwindcss/custom-forms'),
+  ],
+  purge: {
+    enabled: false,
+    content: ['./src/**/*.vue'],
+  },
 }
+
+

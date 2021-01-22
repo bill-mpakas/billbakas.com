@@ -3,14 +3,12 @@ title: Taking on the Daily UI Challenge
 thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
 date: 2020-01-26
 summary: I decided to take on the Daily UI Challenge to improve my UI skills and share my process along the way. 
-tags: ['ui', 'design', 'dailyui']
+tags: ['UI']
 --- 
-
----
 
 ## The Why
 
-After some time experimenting with tutorials on youtube about ui design, i realized that the best approach to become a better desinger is to actually build stuff on your own. I randomly ran across the Daily UI Challenge and i decided to give it a go sharing my process along the way. 
+After some time experimenting with tutorials on youtube about ui design, i realized that the best approach to become a better desinger is to actually build stuff on your own. I randomly ran across the Daily UI Challenge and i decided to give it a go, sharing my process along the way. 
 
 ## The How
 

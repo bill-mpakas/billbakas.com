@@ -1,20 +1,33 @@
 <template>
-  <Layout>
-        <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
-        <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
-        <div class="text-copy-secondary mb-4">
+    <Layout class="bg-50">
+       <section class="w-full py-4 mx-auto md:py-8">
+         <h2 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+           Articles
+         </h2>
+         <p class="mt-3 text-xl leading-7 text-gray-600 sm:mt-4">
+           Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
+         </p>
+       </section>
+       <section class="py-4 md:py-8">
+          <div v-for="post in $page.posts.edges" :key="post.id" class="mx-auto">
+            <div class="max-w-5xl px-6 py-6 bg-white rounded-lg shadow">
+              <h2 class="text-2xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
+        <div class="mb-4 text-copy-secondary">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
           <span>{{ post.node.timeToRead }} min read</span>
         </div>
-        <div class="text-lg mb-4">
+        <div class="mb-4 text-lg">
           {{ post.node.summary }}
         </div>
-        <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+        <!-- //TODO Add related tags to the list of articles -->
+        <div class="mt-3">
+          <g-link :to="post.node.path" class="text-base font-semibold leading-6 text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">Read More</g-link>
         </div>
-      </div> <!-- end post -->
-      <pagination-posts
+            </div>
+          </div> <!-- end post -->
+       </section>
+      <pagination-posts class="max-w-2xl mx-auto"
         v-if="$page.posts.pageInfo.totalPages > 1"
         base="/blog"
         :totalPages="$page.posts.pageInfo.totalPages"
@@ -25,7 +38,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 8, page: $page) @paginate {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -39,6 +52,10 @@ query Posts ($page: Int) {
         summary
         timeToRead
         path
+        tags {
+          title
+          path
+        }
       }
     }
   }
@@ -47,14 +64,12 @@ query Posts ($page: Int) {
 
 <script>
 import PaginationPosts from '../components/PaginationPosts'
-import Layout from "../layouts/Blog.vue"
 
 export default {
   metaInfo: {
-    title: 'Blog'
+    title: 'Articles'
   },
   components: {
-    Layout,
     PaginationPosts
   }
 }
