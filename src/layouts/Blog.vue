@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="bg-gray-50">
     <Navbar />
-    <div class="container max-w-5xl py-4 mx-auto md:py-16">
-      <slot/>
+    <div class="container h-screen max-w-5xl py-4 mx-auto md:py-16">
+      <main id="main">
+        <slot/>
+      </main>
     </div>
     <Footer />
   </div>

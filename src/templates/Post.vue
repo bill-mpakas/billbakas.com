@@ -1,8 +1,8 @@
 <template>
   <Layout>
-      <section>
-        <h1 class="mb-2 text-2xl font-bold text-center text-gray-800 lg:text-4xl">{{ $page.post.title }}</h1>
-      <div class="mb-4 text-xl text-center text-gray-500">{{ $page.post.date }}</div>
+    <section class="w-full py-4 mx-auto md:py-8">
+          <h1 class="mb-2 text-2xl font-bold text-center text-gray-800 lg:text-4xl">{{ $page.post.title }}</h1>
+         <div class="mb-4 text-xl text-center text-gray-500">{{ $page.post.date }}</div>
       <div class="flex justify-center space-x-2 text-sm">
         <g-link
           :to="tag.path"
@@ -12,11 +12,14 @@
           {{ tag.title }}
         </g-link>
       </div>
-      </section>
-      <article class="container mx-auto prose lg:px-0 lg:prose-lg" v-html="$page.post.content" />
-      <div class="mx-auto my-4 prose lg:prose-lg">
-        <g-link to="/articles" class="my-8 font-bold text-center uppercase lg:mt-16">Back to Blog</g-link>
-      </div>
+    </section>
+    <article class="px-4 mx-auto prose max-w-7xl sm:px-6 lg:px-8 lg:prose-lg" v-html="$page.post.content" />
+    
+    <section id="back-to-blog">
+      <div class="px-4 mx-auto my-4 prose max-w-7xl sm:px-6 lg:px-8 lg:prose-lg">
+      <g-link to="/blog/" class="my-8 font-bold text-center uppercase lg:mt-16">Back to Blog</g-link>
+    </div>
+    </section>
   </Layout>
 </template>
 

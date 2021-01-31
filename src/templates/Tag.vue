@@ -1,5 +1,5 @@
 <template>
-  <Layout class="bg-gray-50">
+  <Layout>
       <div class="flex items-center justify-between py-8">
         <h1 class="text-3xl font-bold text-gray-800 capitalize lg:ml-4 lg:text-4xl">{{ $page.tag.title }}</h1>
         <p class="hidden font-semibold text-blue-700 md:block">{{$page.tag.belongsTo.totalCount}} Articles</p>

@@ -7,9 +7,9 @@
             Hi! I’m Bill. A UI designer & Wordpress Developer. I design & develop, resilient and accessible user interfaces. Currently pushing pixels &#64;<a target="_blank" class="font-medium text-red-700" rel="noopener" href="https://pointer.gr">pointer.</a>
           </p>
         </div>
-        <div class="py-4 mx-auto md:py-0">
+        <!-- <div class="py-4 mx-auto md:py-0">
             <g-image src="~/assets/images/bill-photo.jpg" class="object-cover w-48 h-48 text-center rounded-full" alt="logo" />
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- <section class="my-4 md:my-12" id="recent-articles">

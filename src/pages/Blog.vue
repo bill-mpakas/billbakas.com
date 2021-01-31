@@ -1,11 +1,11 @@
 <template>
-    <Layout class="bg-50">
-       <section class="w-full py-4 mx-auto md:py-8">
+    <Layout>
+       <section id="intro" class="w-full py-4 mx-auto md:py-8">
          <h2 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
            Articles
          </h2>
          <p class="mt-3 text-xl leading-7 text-gray-600 sm:mt-4">
-           Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
+           More like a journal rather than blog.
          </p>
        </section>
        <section class="py-4 md:py-8">
