@@ -1,12 +1,14 @@
 <template>
   <Layout>
     <h1 class="text-4xl font-bold leading-tight">{{ $page.project.title }}</h1>
-      <div class="container mb-8">
-        <VueRemarkContent />
-      </div>
-      <div class="mb-8">
-        <g-link to="/projects" class="font-bold uppercase">Back to Projects</g-link>
-      </div>
+    <div class="container mb-8">
+      <VueRemarkContent />
+    </div>
+    <div class="mb-8">
+      <g-link to="/projects" class="font-bold uppercase"
+        >Back to Projects</g-link
+      >
+    </div>
   </Layout>
 </template>
 
@@ -20,17 +22,18 @@ query Project ($id: ID!) {
 </page-query>
 
 <script>
-import Layout from "../layouts/Project.vue"
+
+import Layout from '~/layouts/Project.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.project.title
-    }
+      title: this.$page.project.title,
+    };
   },
   components: {
-    Layout,
-  }
-}
+    Layout
+  },
+};
 </script>
 
 <style src="../css/tailwind-markdown.css" />

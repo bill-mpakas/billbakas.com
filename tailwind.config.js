@@ -7,49 +7,43 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
+        DEFAULT: "1rem",
+        sm: "2rem",
+        md: "3rem",
+        lg: "4rem",
       },
     },
     fontFamily: {
       sans: [
-        'Ubuntu',
-        '-apple-system',
-        'BlinkMacSystemFont',
+        "Ubuntu",
+        "-apple-system",
+        "BlinkMacSystemFont",
         '"Segoe UI"',
-        'Roboto',
+        "Roboto",
         '"Oxygen"',
-        'Ubuntu',
+        "Ubuntu",
         '"Cantarell"',
-        'sans-serif',
+        "sans-serif",
       ],
-      serif: [
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif',
-      ],
+      serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
       mono: [
-        'Menlo',
-        'Monaco',
-        'Consolas',
+        "Menlo",
+        "Monaco",
+        "Consolas",
         '"Liberation Mono"',
         '"Courier New"',
-        'monospace',
+        "monospace",
       ],
     },
     extend: {},
   },
   variants: {},
   plugins: [
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
     // require('@tailwindcss/custom-forms'),
   ],
   purge: {
     enabled: false,
-    content: ['./src/**/*.vue'],
+    content: ["./src/**/*.vue"],
   },
-}
-
-
+};
