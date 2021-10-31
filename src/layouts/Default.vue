@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50">
     <Navbar />
-    <div class="container h-screen py-4 mx-auto max-w-7xl md:py-16">
+    <div class="container py-4 mx-auto max-w-7xl md:py-16">
       <main id="main">
         <slot />
       </main>

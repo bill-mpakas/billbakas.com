@@ -5,15 +5,13 @@
         class="flex items-center justify-between px-4 py-8 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8"
       >
         <div class="flex justify-start lg:flex-0">
-          <a href="#">
-            <span class="sr-only">Workflow</span>
-            <g-link to="/"
-              ><g-image
-                src="../../static/logo.svg"
-                class="w-32 h-10 sm:h-10"
-                alt="logo"
-            /></g-link>
-          </a>
+          <span class="sr-only">Workflow</span>
+          <g-link to="/"
+            ><g-image
+              src="../../static/logo.svg"
+              class="w-32 h-10 sm:h-10"
+              alt="logo"
+          /></g-link>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
           <button

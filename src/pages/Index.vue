@@ -146,7 +146,7 @@ export default {
   metaInfo() {
     return this.$seo({
       title: "Home", // Uses the titleTemplate in Gridsome config
-      description: "| Full Stack Designer",
+      description: "Bill Bakas | Full Stack Designer",
       openGraph: {
         title: "Bill Bakas | Full Stack Designer",
         type: "website",
