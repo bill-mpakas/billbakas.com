@@ -4,81 +4,96 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
+const tailwind = require("tailwindcss");
 
-const postcssPlugins = [
-  tailwind(),
-]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
+const postcssPlugins = [tailwind()];
 
 module.exports = {
-  siteName: "Bill Bakas",
+  siteName: process.env.SITE_NAME || "Bill Bakas Personal Blog",
+  siteDescription: process.env.SITE_DESCRIPTION,
+  siteUrl: process.env.GRIDSOME_BASE_URL || "https://billbakas.com",
+  icon: {
+    favicon: {
+      src: process.env.SITE_FAVICON_PATH || "./static/images/favicon.png",
+      sizes: [16, 32, 96],
+    },
+  },
   plugins: [
     {
-      use: 'gridsome-plugin-seo'
+      use: "gridsome-plugin-seo",
+      options: {
+        author: "Bill Bakas",
+      },
     },
     {
-      use: '@gridsome/vue-remark',
+      use: "@gridsome/vue-remark",
       options: {
-        typeName: 'Project', // Required
-        baseDir: './projects', // Where .md files are located
-        pathPrefix: '/projects', // Add route prefix. Optional
-        template: './src/templates/Project.vue', // Optional
-      }
+        typeName: "Project", // Required
+        baseDir: "./projects", // Where .md files are located
+        pathPrefix: "/projects", // Add route prefix. Optional
+        template: "./src/templates/Project.vue", // Optional
+      },
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
+        path: "blog/**/*.md",
+        typeName: "Post",
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
         refs: {
           tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
-      }
+            typeName: "Tag",
+            create: true,
+          },
+        },
+      },
     },
     {
-      use: '@gridsome/plugin-google-analytics',
+      use: "@gridsome/plugin-google-analytics",
       options: {
-        id: 'G-NDVYYZ15CG'
-      }
+        id: process.env.GOOGLE_ANALYTICS_ID,
+      },
     },
     {
-      use: 'gridsome-plugin-robots-txt',
+      use: "gridsome-plugin-robots-txt",
       options: {
-        host: 'https://billbakas.com',
-        sitemap: 'https://billbakas.com/configs/sitemap.xml',
+        host: "https://billbakas.com",
+        sitemap: "https://billbakas.com/configs/sitemap.xml",
         policy: [
           {
             userAgent: "Googlebot",
             allow: "/",
             disallow: "/search",
-            crawlDelay: 2
+            crawlDelay: 2,
           },
           {
             userAgent: "*",
             allow: "/",
             disallow: "/search",
             crawlDelay: 10,
-            cleanParam: "ref /articles/"
-          }
-        ]
-      }
-    }
+            cleanParam: "ref /articles/",
+          },
+        ],
+      },
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000, // default
+      },
+    },
   ],
   css: {
     loaderOptions: {
-        postcss: {
-            plugins: postcssPlugins,
-        },
+      postcss: {
+        plugins: postcssPlugins,
+      },
     },
   },
   templates: {
-    Tag: '/tag/:id'
+    Tag: "/tag/:id",
   },
-}
-
+};

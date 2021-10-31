@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-50">
     <Navbar />
     <div class="py-4 mx-auto md:py-16">
       <main id="main">

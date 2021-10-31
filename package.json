@@ -18,11 +18,13 @@
     "gridsome": "^0.7.20",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-seo": "^1.0.1",
-    "tailwindcss": "^2.0.2",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.0"
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
