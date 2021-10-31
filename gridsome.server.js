@@ -5,12 +5,22 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
+module.exports = function(api) {
+  api.loadSource(({ addMetadata, addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+
+    addMetadata(
+      "siteTitle",
+      process.env.SITE_TITLE || "Bill Bakas | Full Stack Designer"
+    );
+    addMetadata("siteAuthor", process.env.SITE_AUTHOR || "Bill Bakas");
+    addMetadata(
+      "siteAuthorUrl",
+      process.env.SITE_AUTHOR_URL || "https://billbakas.com"
+    );
+  });
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
-}
+  });
+};

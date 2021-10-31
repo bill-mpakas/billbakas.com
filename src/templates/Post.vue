@@ -58,6 +58,7 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
+    path
     date (format: "MMMM D, Y")
     content
     featured_image
@@ -70,6 +71,16 @@ query Post ($path: String!) {
   }
 }
 </page-query>
+
+<static-query>
+query {
+  metadata {
+    siteTitle
+    siteDescription
+    siteAuthor
+  }
+}
+</static-query>
 
 <script>
 import Layout from "~/layouts/Post.vue";
@@ -92,7 +103,7 @@ export default {
           name: "twitter:site",
           content: `@${this.$static.metadata.siteAuthor}`,
         },
-        { name: "twitter:image", content: this.$page.post.featured_image },
+        { name: "twitter:image", content: this.getThumbnailImage },
         {
           name: "twitter:creator",
           content: `@${this.$static.metadata.siteAuthor}`,
@@ -109,11 +120,8 @@ export default {
           content: this.$page.post.date,
         },
         { property: "og:updated_time", content: this.$page.post.date },
-        { property: "og:image", content: this.$page.post.featured_image },
-        {
-          property: "og:image:secure_url",
-          content: this.$page.post.featured_image,
-        },
+        { property: "og:image", content: this.getThumbnailImage },
+        { property: "og:image:secure_url", content: this.getThumbnailImage },
         { property: "og:image:width", content: "912" },
         { property: "og:image:height", content: "513" },
       ],
@@ -121,6 +129,21 @@ export default {
   },
   components: {
     Layout,
+  },
+  computed: {
+    getThumbnailImage() {
+      let thumbnailImage = `${this.getBaseUrl}/default-thumb.png`;
+      const cover = this.$page.post.featured_image;
+      if (cover != null) {
+        thumbnailImage = `${this.getBaseUrl}${
+          this.$page.post.featured_image.src
+        }`;
+      }
+      return thumbnailImage;
+    },
+    getBaseUrl() {
+      return process.env.GRIDSOME_BASE_URL;
+    },
   },
 };
 </script>

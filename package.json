@@ -1,6 +1,7 @@
 {
-  "name": "example",
-  "private": true,
+  "name": "billbakas.com",
+  "private": false,
+  "license": "UNLICENSED",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
