@@ -5,12 +5,9 @@
         class="flex items-center justify-between px-4 py-8 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8"
       >
         <div class="flex justify-start lg:flex-0">
-          <span class="sr-only">Workflow</span>
+          <span class="sr-only">billbakas</span>
           <g-link to="/"
-            ><g-image
-              src="../../static/logo.svg"
-              class="w-32 h-10 sm:h-10"
-              alt="logo"
+            ><g-image src="../../static/logo.svg" class="w-32 h-10" alt="logo"
           /></g-link>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
@@ -20,7 +17,6 @@
             class="inline-flex items-center justify-center p-2 text-gray-600 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
             <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: menu -->
             <svg
               class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +34,8 @@
             </svg>
           </button>
         </div>
-
         <div class="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-          <nav class="hidden space-x-10 md:flex">
+          <nav class="hidden space-x-6 md:flex">
             <g-link
               to="/blog/"
               class="text-xl font-medium text-gray-500 hover:text-gray-900"
@@ -49,7 +44,7 @@
             </g-link>
             <a
               href="/Bakas_Vasileios_CV_2021.pdf"
-              class="px-4 text-xl font-medium text-gray-500 border border-gray-300 rounded-sm shadow-sm hover:text-gray-900"
+              class="text-xl font-medium text-gray-500 hover:text-gray-900"
             >
               Resume
             </a>
@@ -64,13 +59,13 @@
           <div
             class="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50"
           >
-            <div class="px-5 pt-5 pb-6">
+            <div class="px-2 pt-5 pb-6">
               <div class="flex items-center justify-between">
                 <div>
                   <g-link to="/"
                     ><g-image
                       src="../../static/logo.svg"
-                      class="h-8 w-28 sm:h-10"
+                      class="w-32 h-10 sm:h-10"
                       alt="logo"
                   /></g-link>
                 </div>

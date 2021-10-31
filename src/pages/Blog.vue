@@ -56,8 +56,6 @@
                   <time :datetime="post.node.date">
                     {{ post.node.date }}
                   </time>
-                  <span aria-hidden="true"> &middot; </span>
-                  <span> {{ post.node.timeToRead }} min read </span>
                 </div>
               </div>
             </div>
@@ -91,7 +89,6 @@ query Posts ($page: Int) {
         featured_image (width: 400, height: 300, blur: 40)
         date (format: "MMMM D, Y")
         summary
-        timeToRead
         path
         tags {
           title

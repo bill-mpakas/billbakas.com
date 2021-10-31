@@ -12,6 +12,13 @@ module.exports = {
   siteName: process.env.SITE_NAME || "Bill Bakas Personal Blog",
   siteDescription: process.env.SITE_DESCRIPTION,
   siteUrl: process.env.GRIDSOME_BASE_URL || "https://billbakas.com",
+  metadata: {
+    author: "Bill Bakas",
+    twitter: {
+      site: "@bill_bakas",
+      creator: "@bill_bakas",
+    },
+  },
   icon: {
     favicon: {
       src: process.env.SITE_FAVICON_PATH || "./static/images/favicon.png",
@@ -35,10 +42,12 @@ module.exports = {
       },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: "@gridsome/vue-remark",
       options: {
-        path: "blog/**/*.md",
-        typeName: "Post",
+        typeName: "Post", // Required
+        baseDir: "./blog", // Where .md files are located
+        pathPrefix: "/blog", // Add route prefix. Optional
+        template: "./src/templates/Post.vue", // Optional
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],

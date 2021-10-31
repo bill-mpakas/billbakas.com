@@ -25,8 +25,6 @@
             />
           </svg>
           <time :datetime="$page.post.date">{{ $page.post.date }}</time>
-          <span> &middot; </span>
-          <span>{{ $page.post.timeToRead }} min read</span>
         </div>
         <div class="flex justify-center space-x-2 text-sm">
           <g-link
@@ -47,10 +45,9 @@
         :src="$page.post.featured_image"
       />
     </div>
-    <article
-      class="container py-4 prose md:py-8 sm:px-6 lg:px-8 lg:prose-lg xl:prose-xl"
-      v-html="$page.post.content"
-    />
+    <article class="container py-4 prose md:py-8 lg:prose-lg xl:prose-xl">
+      <VueRemarkContent />
+    </article>
   </Layout>
 </template>
 
@@ -63,7 +60,6 @@ query Post ($path: String!) {
     content
     featured_image
     summary
-    timeToRead
     tags {
       title
       path

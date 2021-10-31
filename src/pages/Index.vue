@@ -104,8 +104,6 @@
                   <time :datetime="post.node.date">
                     {{ post.node.date }}
                   </time>
-                  <span aria-hidden="true"> &middot; </span>
-                  <span> {{ post.node.timeToRead }} min read </span>
                 </div>
               </div>
             </div>

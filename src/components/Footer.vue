@@ -5,7 +5,7 @@
       class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
     >
       <div class="flex justify-center space-x-6 md:order-2">
-        <p class="text-gray-400">Find me Online</p>
+        <p class="text-gray-500">Find me Online</p>
         <a
           target="_blank"
           href="https://www.instagram.com/bill_mpakas/"
@@ -91,8 +91,8 @@
         </a>
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
-        <p class="text-base text-center text-gray-400">
-          © 2012–2021 Copyright Bill Bakas. All rights reserved.
+        <p class="text-base font-light text-center text-gray-400">
+          © 2021 Copyright Bill Bakas. All rights reserved.
         </p>
       </div>
     </div>
