@@ -8,24 +8,24 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/cli": "^0.3.1",
+    "@gridsome/cli": "^0.3.4",
     "@gridsome/plugin-google-analytics": "^0.1.2",
     "@gridsome/plugin-sitemap": "^0.4.0",
-    "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.6.2",
-    "@gridsome/vue-remark": "^0.2.4",
-    "@tailwindcss/typography": "^0.4.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@gridsome/vue-remark": "^0.2.6",
+    "@tailwindcss/typography": "^0.5.7",
     "global": "^4.4.0",
-    "gridsome": "^0.7.20",
+    "gridsome": "^0.7.23",
     "gridsome-plugin-robots-txt": "^1.0.2",
-    "gridsome-plugin-seo": "^1.0.1",
+    "gridsome-plugin-seo": "^1.0.2",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.0",
-    "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "autoprefixer": "^10.4.12",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   }
 }

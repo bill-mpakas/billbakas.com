@@ -1,10 +1,11 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
+  content: [
+    // Example content paths...
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   theme: {
     container: {
       center: true,
@@ -39,7 +40,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        gray: colors.blueGray,
+        gray: colors.slate,
       },
     },
   },
