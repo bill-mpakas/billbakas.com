@@ -85,6 +85,10 @@ export default {
     return {
       title: this.$page.post.title,
       description: this.$page.post.summary,
+      openGraph: {
+        title: "My Site",
+        type: "website"
+      },
       meta: [
         {
           key: "description",

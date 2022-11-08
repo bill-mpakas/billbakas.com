@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@base {
+  .section {
+    @apply py-4 lg:py-12 xl:py-24;
+  }
+}

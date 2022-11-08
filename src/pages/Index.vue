@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <section class="py-4 mx-auto lg:py-12" id="intro">
-      <div class="flex flex-wrap-reverse justify-center mx-auto">
+    <section class="section" id="intro">
+      <div class="container flex">
         <div class="w-full leading-loose lg:w-2/3">
           <h1
             class="mb-1 text-3xl tracking-tight text-gray-900 font-regular md:text-left lg:text-4xl xl:text-6xl"
