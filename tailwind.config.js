@@ -46,6 +46,7 @@ module.exports = {
 		extend: {
 			colors: {
 				gray: colors.slate,
+				dark: '#292524',
 			},
 		},
 	},
